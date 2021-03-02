@@ -1,6 +1,6 @@
 import React from 'react';
-import {store} from '../App';
 import {completeTodo, deleteTodo} from '../redux/actions';
+import { store } from '../redux/store';
 
 const TodoItem = (props) => {
   const onItemClick = (e) => {
@@ -13,10 +13,10 @@ const TodoItem = (props) => {
   }
 
     return(
-      <li>
-        <a onClick={onItemClick} style={{textDecoration: props.completed? 'line-through':'none'}}>{props.message.trim()}</a>
-        <a onClick={onDeleteClicked} style={{textDecoration: 'none', cursor: 'pointer'}}> [x]</a>
-      </li>
+      <div>
+        <label onClick={onItemClick} style={{textDecoration: props.completed? 'line-through':'none', cursor: 'pointer'}}>{props.message.trim()}</label>
+        <label onClick={onDeleteClicked} style={{textDecoration: 'none', cursor: 'pointer'}}> [x]</label>
+      </div>
     );
   
 }

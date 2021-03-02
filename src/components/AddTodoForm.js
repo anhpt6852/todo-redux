@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {store} from '../App';
 import {addTodo, clearTodo} from '../redux/actions';
+import { store } from '../redux/store';
 
 class AddTodoForm extends Component {
   constructor(props){

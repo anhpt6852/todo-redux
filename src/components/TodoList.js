@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
+import { store } from '../redux/store';
 import TodoItem from './TodoItem';
-import {store} from '../App';
 
 class TodoList extends Component {
   constructor(props){
@@ -37,9 +37,9 @@ class TodoList extends Component {
     }
     else{
       return(
-        <ol>
+        <div>
           {items}
-        </ol>
+        </div>
       );
     }
   }

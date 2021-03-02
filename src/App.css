@@ -1,4 +1,4 @@
-.App {
+* {
   text-align: center;
 }
 
@@ -36,4 +36,16 @@
   100% {
     transform: translateY(0px)
   }
+}
+input[type='text']{
+  margin: 8px;
+  padding: 8px;
+}
+input[type='submit'],
+[type='button']{
+  margin: 8px;
+  padding: 8px;
+}
+.container {
+  border: 1px black;
 }
